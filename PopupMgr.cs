@@ -30,9 +30,7 @@ public class PopupMgr : SingletonBehaviour<PopupMgr>
     {
         Overlay,  //다른 팝업과 함께 최상위에 표시
         Single,   //활성화된 모든 팝업을 hide하고, 혼자만 노출. 팝업이 닫히면 hide되었던 팝업들이 다시 활성화
-        Override, //기존 팝업을 모두 닫고 단독으로 표시
-        Reserve,  //대기 목록(reservedList)에 추가, 다른 팝업이 모두 닫힌 후 표시함.
-        Mono,     //기존 팝업이 떠 있으면 이후 초기화 메세지를 무시함. 서버에서 메세지를 받아서 팝업을 띄울때는 오류를 줄이기 위해 이걸 사용할 것.  
+        Override, //기존 팝업을 모두 닫고 단독으로 표시 
     }
 
     public enum gnbMode
@@ -105,10 +103,6 @@ public class PopupMgr : SingletonBehaviour<PopupMgr>
         {
             case openMode.Overlay:
                 m_OverlayPopupCount++;
-                popup.ShowPopup();
-                break;
-            case openMode.Reserve:
-            case openMode.Mono:
                 popup.ShowPopup();
                 break;
             case openMode.Override:
