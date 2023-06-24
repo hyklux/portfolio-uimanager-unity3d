@@ -28,9 +28,9 @@ public class PopupMgr : SingletonBehaviour<PopupMgr>
 
     public enum openMode
     {
-        Overlay,  //다른 팝업과 함께 최상위에 표시
-        Single,   //활성화된 모든 팝업을 hide하고, 혼자만 노출. 팝업이 닫히면 hide되었던 팝업들이 다시 활성화
-        Override, //기존 팝업을 모두 닫고 단독으로 표시 
+        Overlay,  //Display on top of othe popups
+        Single,   //Hide all active popups, and expose only one. When the popup is closed, the hidden popups are opened.
+        Override, //Close all existing popups and display alone
     }
 
     public enum gnbMode
