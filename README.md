@@ -1,7 +1,7 @@
 # portfolio-uimanager-unity3d
 
 
-Unity3d 프로젝트에서 구현했던 UI 관리 시스템 구현 코드입니다.
+This is the UI management system implemented in the Unity3d project.
 
 
-별도의 설명은 첨부하지 않았습니다. 코도로 확인 부탁드립니다.
+No explanation is attached. Please check the code.
